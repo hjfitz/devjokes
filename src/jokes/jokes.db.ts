@@ -36,9 +36,13 @@ const jokes: Jokes = [
     question: "Due to coronavirus, all TCP connections are being converted to UDP to avoid handshakes",
   },
   {
-    question: "How did pirates collaborate before computers?"
+    question: "How did pirates collaborate before computers?",
     answer: "Pier to pier networking",
   },
+  {
+    question: "Why do Java developers need glasses?",
+    answer: "Because they don't C#",
+  }
 ];
 
 export default jokes;
