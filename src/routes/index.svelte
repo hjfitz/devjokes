@@ -6,7 +6,7 @@
 	import {getJoke} from '../jokes/get-joke';
 
 	const joke = getJoke()
-	let answerShown = false
+	let answerShown = !joke.answer
 	function toggleAnswer() {
 		answerShown = true
 	}
@@ -15,7 +15,7 @@
 <h1>DevJokes</h1>
 <p>{joke.question}</p>
 {#if answerShown}
-	<p>{joke.answer}</p>
+	<p>{joke?.answer ?? ''}</p>
 {:else}
 	<button on:click={toggleAnswer}>Show answer</button>
 {/if}
