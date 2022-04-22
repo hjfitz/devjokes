@@ -13,6 +13,10 @@ overrides:
       - '*.svelte'
     processor: svelte3/svelte3
 settings: {}
+rules:
+  indent: [error, tab]
+  quotes: [error, single]
+  semi: [error, never]
 parserOptions:
   sourceType: module
   ecmaVersion: 2020

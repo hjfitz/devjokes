@@ -12,11 +12,16 @@
 	}
 </script>
 
-<h1>DevJokes</h1>
-<p>{joke.question}</p>
-{#if answerShown}
-	<p>{joke?.answer ?? ''}</p>
-{:else}
-	<button on:click={toggleAnswer}>Show answer</button>
-{/if}
+<template>
+<main>
+	<h1>DevJokes</h1>
+	<p>{joke.question}</p>
 
+	{#if answerShown}
+		<p><strong>{joke?.answer ?? ''}</strong></p>
+	{:else}
+		<button on:click={toggleAnswer}>Show answer</button>
+	{/if}
+
+</main>
+</template>
